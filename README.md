@@ -18,8 +18,7 @@ A Python tool to create audio mashups from YouTube videos, implementing requirem
 ├── app.py # Flask web application
 ├── index.html # Web interface
 ├── Michael_Jackson_songs # Folder containing videos of Michael Jackson songs
-├── venv # Virtual environment
-│ └── 102203600.py # Run this file as python 102203600.py "<SingerName>" <NumberOfVideos> <AudioDuration> <OutputFileName>
+├── 102203600.py # Run this file as python 102203600.py "<SingerName>" <NumberOfVideos> <AudioDuration> <OutputFileName>
 └── README.md
 ```
 
