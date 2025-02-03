@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MASHUP GENERATOR by Kirtan Dwivedi- 102203600 </title>
+    <style>
+
+        .form-container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: inline-block;
+            width: 180px;
+            margin-right: 10px;
+        }
+        .form-group input {
+            width: 200px;
+            padding: 5px;
+        }
+        .submit-btn {
+            background-color: #ff8c00;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .info-text {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 0.9em;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2> MASHUP GENERATOR </h2>
+        <p class="info-text">Once processed, the MP3 file will be sent to your email address.</p>
+        <form action="/process" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label>Singer Name</label>
+                <input type="text" name="singer_name" required>
+            </div>
+            <div class="form-group">
+                <label># of videos</label>
+                <input type="number" name="num_videos" min="1" max="20" required>
+            </div>
+            <div class="form-group">
+                <label>duration of each video</label>
+                <input type="number" name="duration" min="1" step="1" required>
+                <span>sec</span>
+            </div>
+            <div class="form-group">
+                <label>Email Id</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Submit" class="submit-btn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
